@@ -1,0 +1,14 @@
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border: 2px solid rgb(39, 151, 42);
+    color: rgba(0, 0, 210, 0.7);
+    background: gold;
+    border-radius: 15px;
+    padding: 3px 10px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 1px 2px 3px black;
+}

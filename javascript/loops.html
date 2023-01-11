@@ -1,0 +1,64 @@
+<!-- 5 type of loop
+1. for loop
+2.do-while loop
+3. while loop
+4. for...in loop
+5. for...of loop  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+</head>
+
+<body>
+    <h1>LOOPS</h1>
+
+    <script>
+        //for loop
+        // for (let i = 1; i < 10; i++)
+        //     console.log("hey there");
+
+        // while loop
+        // let i = 0;
+        // while (i < 100) {
+        //     console.log("hey there");
+        //     i++;
+        // }
+
+
+        // do while loop
+        // let i = 10;
+        // do {
+        //     i--;
+        //     console.log("hey there");
+
+        // } while (i > 0)
+
+
+        //for..in loop use in object and arrays
+        // let animal = {
+        //     name: "lion",
+        //     leg: 4
+        // };
+        // for (let key in animal) {
+        //     console.log(key, animal[key]);
+        // }
+
+        //arrays
+        let names = ["shrey", "simi", "panipuri", "golgappa"];
+        for (let index in names) {
+            console.log(index, names[index]);
+        }
+        //for..of loop
+        for (let name of names)
+            console.log(name);
+    </script>
+</body>
+
+</html>

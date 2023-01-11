@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+
+<body>
+    <script>
+        //declaring a class
+        class Product {
+            constructor(ItemName) {
+                this.ItemName = ItemName;
+                // this.price = price;
+                // this.discount = discount;
+                // this.productcode = productcode;
+            }
+            getItemname() {
+                return this.ItemName + " is a product";
+            }
+        }
+        class furniture extends Product {
+            constructor(ItemName) {
+                super(ItemName);
+            }
+            getItemname() {
+                return this.ItemName + "  is a furniture";
+            }
+        }
+        let pencil = new Product("pencil", 20, 10, "p20");
+        let chair = new Product1("chair", 988, 15, "ch70");
+
+        // const Product1 = class Product {
+        //     constructor(ItemName, price, discount, productcode) {
+        //             this.ItemName = ItemName;
+        //             this.price = price;
+        //             this.discount = discount;
+        //             this.productcode = productcode;
+        //         }
+        //         //getter and setter
+        //     get getdiscountvalue() {
+        //         return this.discount;
+        //     }
+        //     set setdiscountvalue(value) {
+        //         this.discount = value;
+        //     }
+        // };
+        // let chair = new Product1("chair", 988, 15, "ch70");
+    </script>
+
+</body>
+
+</html>
