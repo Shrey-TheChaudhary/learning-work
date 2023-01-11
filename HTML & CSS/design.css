@@ -1,0 +1,19 @@
+nav a {
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 25px;
+    float: left;
+}
+
+nav {
+    background-color: black;
+    overflow: hidden;
+}
+
+nav a:hover {
+    color: crimson;
+}
+
+nav a:visited {
+    color: rgb(41, 182, 71);
+}

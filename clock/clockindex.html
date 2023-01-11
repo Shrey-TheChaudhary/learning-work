@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog clock</title>
+    <link rel="stylesheet" href="Clockstyle.css" type="text/css">
+    <script src="Clockjavascript.js"></script>
+</head>
+<style>
+    .container {
+        font-size: 23px;
+        background-color: rgb(61, 224, 224);
+        border: 2px solid rgb(151, 60, 60);
+        padding: 34px;
+        margin: 4px;
+        text-align: center;
+        border-radius: 100px;
+        align-content: center;
+    }
+    
+    #time {
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 24px;
+    }
+</style>
+
+<body>
+    <div id="clockcontainer">
+        <div id="hour"> </div>
+        <div id="minute"> </div>
+        <div id="second"> </div>
+    </div>
+
+
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+    <script>
+        // let newDate = new Date("2029-09-30");
+        // console.log(newDate)
+
+        // let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+        let newDate = new Date();
+
+
+        newDate.setDate(8);
+        newDate.setMinutes(29);
+        setInterval(updateTime, 1000);
+
+        function updateTime() {
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox Challange 3</title>
+    <style>
+        * {
+            font-size: 30px;
+        }
+        
+        .container {
+            background-color: #bf851b;
+            box-shadow: .4em .4em 2em #45A29E;
+            margin: 20px;
+        }
+        
+        .main {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .child {
+            border: 1px solid #ae799c;
+            display: flex;
+            flex-direction: column;
+            background-color: #464ca3;
+            color: #45A29E;
+            width: 110%;
+        }
+        
+        .nav {
+            flex-grow: 1;
+            width: 20%;
+            height: 700px;
+            padding: 25px 25px;
+            color: black;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .child div {
+            border: 1px solid #45A29E;
+            width: 100%;
+            padding: 25px 25px;
+            color: black;
+            font-weight: 500;
+        }
+        
+        .header,
+        .footer {
+            flex-basis: 200px;
+            flex-grow: .2;
+            text-align: left;
+        }
+        
+        .article {
+            flex-basis: 400px;
+            flex-grow: .6;
+            background-color: whitesmoke;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="nav">Nav Tab</div>
+            <div class="child">
+                <div class="header">Header</div>
+                <div class="article">Article</div>
+                <div class="footer">Footer</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

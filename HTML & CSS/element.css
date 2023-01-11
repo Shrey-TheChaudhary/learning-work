@@ -1,0 +1,47 @@
+p,
+a {
+    color: darkgreen;
+}
+
+li {
+    list-style-type: circle;
+}
+
+.special {
+    color: blueviolet;
+    font-weight: 900;
+}
+
+li em {
+    color: springgreen;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1+p {
+    color: crimson;
+    font-size: 150%;
+    padding: 30px;
+    background-color: burlywood;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: solid;
+}
+
+li[class="a"] {
+    color: royalblue;
+    font-variant: small-caps;
+    font-size: large;
+}
+
+li[class~="a"] {
+    color: rgb(151, 26, 26);
+    font-variant: small-caps;
+    font-size: large;
+}
+
+* {
+    list-style-type: none;
+}

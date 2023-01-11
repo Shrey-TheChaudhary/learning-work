@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox challange 2</title>
+    <style>
+        body {
+            background-color: rgba(24, 167, 105, 0.522);
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+        
+        p {
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 30px;
+            color: white;
+        }
+        
+        h2 {
+            color: white;
+            font-size: 40px;
+            margin: 30px;
+        }
+        
+        .box {
+            width: 25%;
+            height: 80%;
+            align-self: center;
+            text-align: center;
+            box-shadow: 5px 5px 20px rgba(148, 61, 61, 0.644);
+            background-color: rgb(10, 10, 10);
+        }
+        
+        .imagebox1,
+        .imagebox2,
+        .imagebox3 {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+        
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+        
+        button {
+            height: 50px;
+            width: 80%;
+            margin-bottom: 40px;
+            font-size: 20px;
+        }
+        
+        .box:hover {
+            box-shadow: 19px 23px 20px rgba(143, 96, 96, 0.323);
+        }
+        
+        button:hover {
+            cursor: zoom-in;
+            background-color: rgba(245, 245, 245, 0.651);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <div class="imagebox1">
+                <img class="image 1" src="https://motosaigon.vn/wp-content/uploads/2021/02/suzuki-hayabusa-2021-gia-xe-photo-review-motosaigon-24.jpg" alt="image.jpg">
+            </div>
+            <h2>Suzuki Hayabusa</h2>
+            <p>The Hayabusa is powered by 1340cc BS6 engine which develops a power of 187.3 bhp and a torque of 150 Nm. With both front and rear disc brakes, Suzuki Hayabusa comes up with anti-locking braking system. This Hayabusa bike weighs 266 kg and
+                has a fuel tank capacity of 20 liters.</p>
+            <button>Know more</button>
+        </div>
+        <div class="box" id="box2">
+            <div class="imagebox2">
+                <img class="image 2" src="https://cdn.visordown.com/field/image/BMW+HP4+Race+2017.jpg" alt="image.jpg">
+            </div>
+            <h2>BMW HP4</h2>
+            <p>BMW HP4 Race is a premium sportbike that carries loads of carbon fiber in its bodywork. This makes it good for just 171.4 kg of weight and that too with fuel and all fluids. The 998cc, four cylinder engine powering HP4 Race is good for 215
+                HP and 120 Nm of torque. High power and low weight combines to bring the best throttle response from a bike of its segment
+            </p>
+            <button>Know more</button>
+        </div>
+        <div class="box" id="box3">
+            <div class="imagebox2">
+                <img class="image 3" src="https://i0.wp.com/www.asphaltandrubber.com/wp-content/uploads/2015/09/2016-MV-Agusta-F3-675-RC-static-black-04.jpg" alt="image.jpg">
+            </div>
+            <h2>MV Agusta F4</h2>
+            <p>The MV Agusta F4 is a four-cylinder sport bike made by MV Agusta from 1999 until 2018. It was the motorcycle that launched the resurrection of the brand in 1998. The F4 was created by motorcycle designer Massimo Tamburini at CRC (Cagiva Research
+                Center), following his work on the Ducati 916</p>
+            <button>Know more</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
